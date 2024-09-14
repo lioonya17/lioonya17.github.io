@@ -115,7 +115,7 @@ button {
 
 .image-hero {
   position: absolute;
-  background: url(hero.jpeg);
+  background: url(/img/hero.jpeg);
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
