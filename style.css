@@ -1,1039 +1,230 @@
-html {
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-}
-
-body {
-  padding-top: 50px;
-  padding: 0;
-  margin: 0;
-  height: 100%;
-  background-color: #282829;
-  color: #fff;
-  line-height: 150%;
-  font-family: "Prata", serif;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 3%;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="number"],
-textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  outline: 0;
-  box-shadow: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-  margin: 0;
-  padding: 0;
-}
-
-input {
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-button {
-  padding: 0;
-  margin: 0;
-}
-
-.burger-checkbox {
-  display: none;
-}
-
-.burger {
-  display: none;
-}
-
-.menu-list {
-  display: none;
-}
-
-.btn {
-  color: #222;
-  background-color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 4%;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-.wrapper {
-  height: 100%;
-}
-
-.main {
-  position: relative;
-
-  left: 0;
-}
-
-.container {
-  max-width: 1597px;
-  padding: 0 80px;
-  margin: 0 auto;
-  box-sizing: content-box;
-}
-
-.hero {
-  background-color: #222;
-  position: relative;
-  top: -84px;
-}
-
-.info-hero {
-  padding-top: 332px;
-  padding-bottom: 50px;
-}
-
-.image-hero {
-  position: absolute;
-  background: url(img/hero.jpeg);
-  background-size: contain;
-  background-position: right;
-  background-repeat: no-repeat;
-  right: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.header {
-  width: 100%;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  align-items: center;
-  padding: 30px 0;
-}
-
-.header__wrap {
-  display: flex;
-}
-
-.active {
-  background-color: rgba(40, 40, 41, 70%);
-  transition: all 0.3s ease;
-}
-
-.nav {
-  display: flex;
-}
-
-.nav__el {
-  text-decoration: none;
-  list-style: none;
-  font-size: 16px;
-  letter-spacing: 4%;
-  text-transform: uppercase;
-  margin-right: 29px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
-
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
-.nav__link:hover {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #fff;
-  transition: border-bottom 0.3s ease;
-}
-
-.header__logo {
-  font-size: 36px;
-  margin-right: 205px;
-}
-
-.hero__title {
-  font-size: 80px;
-  line-height: 120%;
-  letter-spacing: 0;
-  font-weight: 400;
-  margin-bottom: 50px;
-}
-
-.hero__text {
-  display: inline-block;
-  margin-bottom: 64px;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 120%;
-  font-size: 50px;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.list-hero {
-  margin-bottom: 40px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: flex-start;
-}
-
-.list-hero__el {
-  display: inline;
-  padding: 5.525px 20px 5.525px 58px;
-  position: relative;
-  list-style: none;
-  font-size: 24px;
-  font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 0%;
-  font-weight: 400;
-  line-height: 110%;
-  margin-bottom: 35px;
-  background-color: rgba(40, 40, 41, 70%);
-}
-
-.list-hero__el:last-child {
-  margin-bottom: 0;
-}
-
-.list-hero__el::before {
-  content: "";
-  background-image: url(done.png);
-  background-repeat: no-repeat;
-  z-index: 1;
-  width: 39px;
-  height: 37px;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.list-hero__el-prata {
-  vertical-align: middle;
-  font-size: 40px;
-  letter-spacing: 4%;
-  text-transform: uppercase;
-}
-
-.btn-hero {
-  padding: 32px 50px;
-  font-size: 24px;
-  box-shadow: none;
-  text-decoration: none;
-  position: relative;
-  z-index: 3;
-}
-
-.btn-hero:hover {
-  transform: scale(1.05);
-  transition: transform 0.5s ease-in-out;
-}
-
-.info {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  padding-top: 16px;
-  background-color: #282829;
-}
-
-.info__image {
-  width: 33.33%;
-  max-height: 767px;
-}
-
-.info__middle {
-  width: 33.33%;
-  padding: 13px 53px 0 53px;
-}
-
-.list-info {
-  margin-bottom: 80px;
-}
-
-.list-info__el {
-  position: relative;
-  list-style: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 24px;
-  line-height: 140%;
-  letter-spacing: 0%;
-  font-weight: 400;
-  padding-left: 78px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid #55565a;
-
-  &:last-child {
-    border: none;
-    padding-bottom: 0;
-  }
-}
-
-.list-info__el::before {
-  content: "";
-  background-image: url(list.png);
-  background-repeat: no-repeat;
-  z-index: 1;
-  width: 58px;
-  height: 47px;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.list-info__el:last-child::before {
-  transform: translateY(-6%);
-}
-
-.btn-info {
-  font-size: 20px;
-  width: 100%;
-  padding: 32px 0;
-}
-
-.btn-info:hover {
-  transform: scale(1.05);
-  transition: transform 0.5s ease-out;
-}
-
-.form {
-  padding-top: 100px;
-  z-index: 4;
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 100px;
-}
-
-.form-wrapper {
-  position: relative;
-  overflow: hidden;
-  z-index: 5;
-  max-width: 100%;
-  background-color: #fff;
-  border-radius: 30px;
-  color: #38535d;
-  padding: 71.5px 0 71.5px 134px;
-}
-
-.form__title {
-  margin-bottom: 45px;
-  font-size: 54px;
-  line-height: 110%;
-  letter-spacing: 0;
-}
-
-.form__format {
-  width: 781px;
-}
-.form__group input {
-  width: 739px;
-}
-
-.form__group {
-  margin-bottom: 13px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
-input[type="text"],
-input[type="email"] {
-  position: relative;
-  z-index: 1000;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 24px;
-  letter-spacing: 0;
-  color: #55565a;
-  padding: 14.5px 0 14.5px 38px;
-  border-radius: 4px;
-  border: 2px solid #d6d6d6;
-  background-color: #fff;
-  outline: none;
-}
-
-.label {
-  position: relative;
-  z-index: 1000;
-  cursor: pointer;
-}
-
-label {
-  font-size: 19px;
-  color: #55565a;
-  line-height: 130%;
-  letter-spacing: 0;
-}
-
-input[type="checkbox"] {
-  cursor: pointer;
-  position: relative;
-  z-index: 1000;
-  margin-right: 16px;
-}
-
-.form__check {
-  margin-top: 13px;
-  margin-bottom: 26px;
-}
-
-.btn-form {
-  position: relative;
-  z-index: 1000;
-  display: block;
-  border-radius: 4px;
-  background-color: #282829;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  letter-spacing: 0;
-  color: #fff;
-  text-transform: uppercase;
-  cursor: pointer;
-  width: 781px;
-  padding: 32px 0;
-}
-
-.btn-form:hover {
-  background-color: rgba(40, 40, 41, 90%);
-  transition: background-color 0.5s ease-in-out;
-}
-
-.form__image {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background: url(background.jpeg);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
-  display: block;
-  z-index: 4;
-}
-
-.form__hunter {
-  position: absolute;
-  top: 127px;
-  right: 0;
-  width: 800px;
-  height: 100%;
-  background: url(hunter.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
-  display: block;
-  z-index: 6;
-}
-
-.footer {
-  background-color: #222;
-}
-
-.nav-footer {
-  display: flex;
-  width: 100%;
-  padding: 40px 0;
-  align-items: center;
-  justify-content: center;
-  border-top: 2px solid #d5c9be;
-  border-bottom: 2px solid #d5c9be;
-}
-
-.nav-footer__link {
-  position: relative;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
-  text-transform: uppercase;
-  letter-spacing: 4%;
-  margin: 0 30px;
-}
-
-.footer__wrap {
-  padding-top: 44px;
-  padding-bottom: 53px;
-}
-
-.footer__high,
-.footer__bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer__high {
-  margin-bottom: 38px;
-}
-
-.footer__logo {
-  display: block;
-  font-size: 36px;
-  text-transform: uppercase;
-}
-
-.footer__copy {
-  width: 33.33%;
-  font-size: 20px;
-  letter-spacing: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
-}
-
-.list-social {
-  display: inline-flex;
-}
-
-.list-social__el {
-  list-style: none;
-  padding: 0 16px;
-}
-
-.list-social__img:hover {
-  transform: scale(1.1);
-  transition: transform 0.5s ease-out;
-}
-
-.footer__text {
-  width: 33.33%;
-  font-size: 20px;
-  letter-spacing: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  color: #d5c9be;
-}
-
-.btn-footer {
-  display: block;
-  color: #222;
-  font-size: 20px;
-  background-color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
-  letter-spacing: 4%;
-  width: 180px;
-  height: 78px;
-  border-radius: 4px;
-  text-align: center;
-  vertical-align: middle;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.btn-footer:hover {
-  transform: scale(1.05);
-  transition: transform 0.5s ease-out;
-}
-
-.footer__privacy {
-  text-align: center;
-}
-
-.footer__terms {
-  text-align: right;
-}
-
-@media screen and (max-width: 1650px) {
-  .header__logo {
-    margin-right: 60px;
-  }
-
-  .info__image {
-    width: 50%;
-    height: 100%;
-
-    &:last-child {
-      display: none;
-    }
-  }
-
-  .info__middle {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 50%;
-    padding: 0 40px;
-  }
-
-  .list-info {
-    margin-bottom: 0;
-  }
-
-  .btn-info {
-    align-items: end;
-  }
-}
-
-@media screen and (max-width: 1500px) {
-  .info__middle {
-    padding: 0 20px;
-  }
-
-  .list-info__el {
-    padding-left: 78px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-
-    &:last-child {
-      &::before {
-        transform: translateY(-11%);
-      }
-    }
-
-    &:first-child {
-      padding-top: 0;
-
-      &::before {
-        transform: translateY(-76%);
-      }
-    }
-  }
-
-  .form__hunter {
-    display: none;
-  }
-
-  .form-wrapper {
-    overflow: hidden;
-  }
-
-  .form__image {
-    background-size: contain;
-    right: -300px;
-    z-index: 0;
-  }
-}
-
-@media screen and (max-width: 1300px) {
-  .info__image {
-    display: none;
-  }
-
-  .info__middle {
-    width: 100%;
-  }
-
-  .list-info {
-    margin-bottom: 40px;
-  }
-
-  .image-hero {
-    background: url(hero-full.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    min-height: 100%;
-    z-index: 1;
-  }
-
-  .info-hero {
-    position: relative;
-    z-index: 2;
-    padding-top: 150px;
-  }
-
-  .form-wrapper {
-  }
-
-  .form-wrapper {
-    padding: 50px 100px;
-  }
-
-  .form__format {
-    width: 100%;
-  }
-
-  .form__group input {
-    width: 100%;
-  }
-
-  input[type="text"],
-  input[type="email"] {
-    padding: 10px 20px;
-  }
-
-  .btn-form {
-    width: 400px;
-    padding: 20px 0;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .hero {
-    background-color: transparent;
-  }
-
-  .image-hero {
-    display: none;
-  }
-
-  .info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 60px;
-  }
-
-  .info__middle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 20px;
-  }
-
-  .info__image {
-    display: block;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 40px;
-  }
-
-  .btn-hero {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-  }
-
-  .form-wrapper {
-    overflow: hidden;
-    padding: 50px;
-  }
-
-  .btn-form {
-    width: 100%;
-    display: block;
-  }
-
-  .form__group input {
-    width: 90%;
-  }
-
-  .container {
-    max-width: 100%;
-    padding: 0 40px;
-  }
-
-  .list-social__el {
-    &:last-child {
-      padding-right: 0;
-    }
-  }
-
-  .footer__bottom {
-    flex-wrap: wrap;
-  }
-
-  .btn-footer {
-    display: none;
-  }
-
-  .footer__wrap {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .header__wrap {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .header__logo {
-    margin-right: 0;
-  }
-
-  .burger {
-    position: relative;
-    z-index: 1;
-    right: 80px;
-    cursor: pointer;
-    display: block;
-    position: relative;
-    border: none;
-    background: transparent;
-    width: 40px;
-    height: 26px;
-  }
-
-  .burger::before,
-  .burger::after {
-    content: "";
-    right: 0;
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 10px;
-    background: #fff;
-  }
-  .burger::before {
-    top: 0;
-    box-shadow: 0 11px 0 #fff;
-    transition: box-shadow 0.3s 0.15s, top 0.3s 0.15s, transform 0.3s;
-  }
-  .burger::after {
-    bottom: 0;
-    transition: bottom 0.3s 0.15s, transform 0.3s;
-  }
-  .burger-checkbox:checked + .burger::before {
-    top: 11px;
-    transform: rotate(45deg);
-    box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
-    transition: box-shadow 0.15s, top 0.3s, transform 0.3s 0.15s;
-  }
-  .burger-checkbox:checked + .burger::after {
-    bottom: 11px;
-    transform: rotate(-45deg);
-    transition: bottom 0.3s, transform 0.3s 0.15s;
-  }
-  .menu-list {
-    top: 0;
-    left: -1px;
-    position: absolute;
-    display: grid;
-    gap: 12px;
-    padding: 42px 0;
-    margin: 0;
-    background: #fff;
-    list-style-type: none;
-    transform: translateX(-100%);
-    transition: 0.3s;
-    width: 80%;
-  }
-  .menu-item {
-    display: block;
-    padding: 8px;
-    color: #222;
-    font-size: 18px;
-    text-align: center;
-    text-decoration: none;
-  }
-  .menu-item:hover {
-    background: rgba(255, 255, 255, 0.2);
-  }
-  .burger-checkbox:checked ~ .menu-list {
-    transform: translateX(0);
-  }
-
-  .burger-checkbox {
-    position: absolute;
-    visibility: hidden;
-  }
-
-  .nav {
-    display: none;
-  }
-
-  .info-hero {
-    padding-bottom: 0;
-  }
-
-  .hero__title {
-    font-size: 50px;
-  }
-
-  .hero__text {
-    font-size: 30px;
-  }
-
-  .list-hero__el {
-    font-size: 16px;
-  }
-
-  .list-hero__el-prata {
-    font-size: 30px;
-  }
-
-  .btn-hero {
-    font-size: 18px;
-  }
-
-  .list-info__el {
-    font-size: 18px;
-  }
-
-  .btn-info {
-    font-size: 16px;
-  }
-
-  .form-wrapper {
-    padding: 30px;
-  }
-
-  .form__group input {
-    width: 80%;
-  }
-
-  input[type="text"],
-  input[type="email"] {
-    font-size: 16px;
-  }
-
-  label {
-    font-size: 16px;
-  }
-
-  .form__title {
-    font-size: 30px;
-  }
-
-  .btn-form {
-    font-size: 16px;
-  }
-
-  .container {
-    max-width: 100%;
-    padding: 0 40px;
-  }
-
-  .footer__wrap {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  .footer__text {
-    font-size: 16px;
-  }
-
-  .footer__copy {
-    font-size: 16px;
-  }
-
-  .nav-footer__link {
-    font-size: 16px;
-  }
-}
-
-@media screen and (max-width: 620px) {
-  .footer__high {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .footer__logo {
-    margin-bottom: 20px;
-  }
-
-  .footer__bottom {
-    flex-wrap: wrap;
-    justify-content: start;
-    flex-direction: column;
-  }
-
-  .footer__copy,
-  .footer__text {
-    width: auto;
-  }
-
-  .footer__copy {
-    margin-bottom: 15px;
-  }
-
-  .list-social__el {
-    padding: 0 10px;
-    &:last-child {
-      padding-right: 10px;
-    }
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .list-hero__el {
-    font-size: 14px;
-  }
-
-  .list-hero__el-prata {
-    font-size: 14px;
-    text-transform: none;
-  }
-
-  .hero__title {
-    font-size: 30px;
-  }
-
-  .hero__text {
-    font-size: 20px;
-  }
-
-  .btn-hero {
-    font-size: 16px;
-  }
-
-  .header__logo {
-    font-size: 24px;
-  }
-
-  .form__title {
-    font-size: 24px;
-  }
-
-  label {
-    font-size: 13px;
-  }
-
-  .btn-info {
-    font-size: 14px;
-  }
-
-  .btn-form {
-    font-size: 14px;
-  }
-
-  .btn-hero {
-    font-size: 14px;
-  }
-
-  .container {
-    max-width: 100%;
-    padding: 0 20px;
-  }
-
-  .list-info__el {
-    font-size: 14px;
-  }
-
-  .nav-footer__link {
-    font-size: 14px;
-    margin: 0 10px;
-  }
-
-  .footer__wrap {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  .footer__logo {
-    font-size: 20px;
-  }
-
-  .burger {
-    right: 40px;
-  }
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      ,
+      user-scalable="yes"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prata&display=swap"
+      rel="stylesheet"
+    />
+    <title>Task</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="main">
+        <header class="header">
+          <div class="container header__wrap">
+            <a href="/" class="header__logo">Hunter's</a>
+            <ul class="header__nav nav">
+              <li class="nav__el">
+                <a href="/" class="nav__link">Hunt</a>
+              </li>
+              <li class="nav__el">
+                <a href="/" class="nav__link">Hature</a>
+              </li>
+              <li class="nav__el">
+                <a href="/" class="nav__link">fishing</a> 
+              </li>
+            </ul>
+            <input
+              type="checkbox"
+              id="burger-checkbox"
+              class="burger-checkbox"
+            />
+            <label class="burger" for="burger-checkbox"></label>
+            <ul class="menu-list">
+              <li><a href="#" class="menu-item">Home</a></li>
+              <li></li>
+              <li><a href="#" class="menu-item">Hunt</a></li>
+              <li></li>
+              <li><a href="#" class="menu-item">Hature</a></li>
+              <li></li>
+              <li><a href="#" class="menu-item">fishing</a></li>
+              <li></li>
+            </ul>
+          </div>
+        </header>
+        <section class="hero">
+          <div class="container">
+            <div class="info-hero">
+              <h1 class="hero__title">
+                Lorem ipsum<br />
+                dolor sit amet
+              </h1>
+              <span class="hero__text">sed do eiusmod tempor </span>
+              <ul class="hero__list list-hero">
+                <li class="list-hero__el">
+                  do
+                  <span class="list-hero__el-prata">$10 000</span> consectetur
+                  elit
+                </li>
+                <li class="list-hero__el">
+                  <span class="list-hero__el-prata">30%</span> sed do eiusmod
+                  tempor 
+                </li>
+                <li class="list-hero__el">
+                  do <span class="list-hero__el-prata">17%</span> adipiscing
+                  elit sed do
+                </li>
+              </ul>
+              <button class="hero__btn btn-hero btn">Order</button>
+            </div>
+          </div>
+          <div class="image-hero"></div>
+        </section>
+        <section class="info">
+          <img src="/img/middle.jpeg" alt="left" class="info__image" />
+          <div class="info__middle">
+            <ul class="info__list list-info">
+              <li class="list-info__el">
+                Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod
+                tempor 
+              </li>
+              <li class="list-info__el">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor 
+              </li>
+              <li class="list-info__el">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor 
+              </li>
+              <li class="list-info__el">
+                Lorem ipsum dolor amet, consectetur adipiscing elit, sed do
+                eiusmod tempor 
+              </li>
+            </ul>
+            <button class="info__btn btn-info btn">Order</button>
+          </div>
+          <img src="/img/right.jpeg" alt="rigth" class="info__image" />
+        </section>
+        <section class="form container">
+          <div class="form__hunter"></div>
+          <div class="form-wrapper">
+            <h2 class="form__title">
+              Consectetur <br />
+              sed do eiusmod 
+            </h2>
+            <form class="form__format" action="#" method="post">
+              <div class="form__group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="form__input"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="form__group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="form__input"
+                  placeholder="E-mail"
+                />
+              </div>
+              <label>
+                <input
+                  type="checkbox"
+                  name="dishes"
+                  value="paste"
+                  class="form__check"
+                />I accept Privacy policy
+              </label>
+              <button class="form__btn btn-form" type="submit" name="Submit">
+                Submit Form
+              </button>
+            </form>
+            <div class="form__image"></div>
+          </div>
+        </section>
+        <footer class="footer">
+          <div class="footer__nav nav-footer">
+            <a href="/" class="nav-footer__link">Hunt</a>
+            <a href="/" class="nav-footer__link">Hature</a>
+            <a href="/" class="nav-footer__link">fishing</a>
+          </div>
+          <div class="container footer__wrap">
+            <div class="footer__high">
+              <a href="/" class="footer__logo">Hunter's</a>
+              <ul class="footer__social list-social">
+                <li class="list-social__el">
+                  <a href="/" class="list-social__link">
+                    <img
+                      src="/img/inst.png"
+                      alt="instagram"
+                      class="list-social__img"
+                    />
+                  </a>
+                </li>
+                <li class="list-social__el">
+                  <a href="/" class="list-social__link">
+                    <img
+                      src="/img/TT.png"
+                      alt="tik-tok"
+                      class="list-social__img"
+                    />
+                  </a>
+                </li>
+                <li class="list-social__el">
+                  <a href="/" class="list-social__link">
+                    <img
+                      src="/img/ln.png"
+                      alt="linkedin"
+                      class="list-social__img"
+                    />
+                  </a>
+                </li>
+                <li class="list-social__el">
+                  <a href="/" class="list-social__link">
+                    <img
+                      src="/img/FB.png"
+                      alt="facebook"
+                      class="list-social__img"
+                    />
+                  </a>
+                </li>
+                <li class="list-social__el">
+                  <a href="/" class="list-social__link">
+                    <img
+                      src="/img/TG.png"
+                      alt="telegram"
+                      class="list-social__img"
+                    />
+                  </a>
+                </li>
+                <li class="list-social__el">
+                  <a href="/" class="list-social__link">
+                    <img
+                      src="/img/YT.png"
+                      alt="youtube"
+                      class="list-social__img"
+                    />
+                  </a>
+                </li>
+              </ul>
+              <button class="footer__btn btn-footer">order</button>
+            </div>
+            <div class="footer__bottom">
+              <span class="footer__copy">© 2024, Copyright.</span>
+              <span class="footer__text footer__privacy">Privacy policy</span>
+              <span class="footer__text footer__terms">Terms of Use</span>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
